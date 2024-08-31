@@ -13,7 +13,11 @@ const origin = '*';
 
 // middlewares
 dotenv.config(); // protected variables
-app.use(cors()); // enables http requests on react development server
+app.use(cors({
+  origin:["https://gmail-clone-3233.vercel.app/"],
+  methods:["POST","GET"],
+  credentials:true
+})); // enables http requests on react development server
 app.use(express.json({ limit: '10mb', extended: false })); // body parser
 app.use(express.urlencoded({ limit: '1mb', extended: false })); // url parser
 app.use(morgan('common')); // logs requests
