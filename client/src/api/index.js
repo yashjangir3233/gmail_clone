@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:8080';
+const url = 'https://gmail-clone-3233.vercel.app';
 const headers = (token) => ({
   headers: {
     'Content-Type': 'application/json',
