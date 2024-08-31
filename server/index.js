@@ -15,7 +15,7 @@ const origin = '*';
 dotenv.config(); // protected variables
 app.use(cors({
   origin:["https://gmail-front-3233.vercel.app"],
-  methods:["POST","GET"],
+  methods:["POST","GET","PUT"],
   credentials:true
 })); // enables http requests on react development server
 app.use(express.json({ limit: '10mb', extended: false })); // body parser
