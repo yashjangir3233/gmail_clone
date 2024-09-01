@@ -37,7 +37,7 @@ db.on('disconnected', () => console.log('❌ MongoDB disconnected')); // disconn
 db.on('error', (error) => console.log('❌ MongoDB connection error', error)); // listen for errors during the session
 
 // routes
-app.get('/', (request, response, next) => response.status(200).json('MERN Gmail clone'));
+// app.get('/', (request, response, next) => response.status(200).json('MERN Gmail clone'));
 app.use('/account', accountRoutes);
 app.use('/email', emailRoutes);
 
